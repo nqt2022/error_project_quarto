@@ -1,0 +1,8 @@
+```{python}
+#| code-fold: true
+#| code-summary: "code Python"
+from sympy import *
+a = 5
+print(a)
+
+```

@@ -1,0 +1,224 @@
+project: 
+  #output-dir: thi_dir_out
+  render:
+    #- thucode.qmd
+    #- Thi_STA312_chap3.qmd # lỗi khoảng 400-500
+    - Thi_STA312_chap5.qmd
+    #- Thi_quidinhhocphan_STA151.qmd
+    #- MTH_103_Thi_article.qmd
+    #- Thi_MTH103_3.qmd
+    #- Thi_MTH103_4.qmd
+    #- Thi_MTH103_5.qmd
+    #- Thi_MTH103_6.qmd
+    #- Thi_MTH103_7.qmd
+    #- Thi_MTH103_8.qmd
+    #- Thi_MTH103_9.qmd
+    #- Thi_MTH103_10.qmd
+    #- Thi_MTH103_11.qmd
+    #- Thi_MTH103_12.qmd
+    #- Thi_MTH103_13.qmd
+    #- Thi_MTH103_14.qmd
+    #- Thi_MTH103_15.qmd
+title: BÀI GIẢNG
+subtitle: Toán xác suất cho Điện - Điện tử (**STA312**)
+author: Nguyễn Quang Thi
+institude: Khoa MT & KHTN
+from: markdown+tex_math_single_backslash+emoji
+engine: knitr
+keep-tex: true
+default-image-extension: png
+callout-icon: false
+code-line-numbers: true
+code-block-border-left: "#ADD8E6"
+fig_caption: true
+fig-align: center
+fig-pos: H
+cap-location: bottom
+fig-cap-location: bottom
+number-offset: 0
+bibliography: "https://api.citedrive.com/bib/878f7c13-5f71-47cb-a466-e1cddf267225/references.bib?x=eyJpZCI6ICI4NzhmN2MxMy01ZjcxLTQ3Y2ItYTQ2Ni1lMWNkZGYyNjcyMjUiLCAidXNlciI6ICI2NDgzIiwgInNpZ25hdHVyZSI6ICIxODlkZWFjZGI0NzJkMmZkYmZiMmI1YmNiMTk4MzkzMDUzMmFkODI2NjhiZTVhNTY2MDJiMDFmOWNjOTc5YTNkIn0=/bibliography.bib"
+nocite: |
+  @geore1997, @glyn2018
+csl: vietnam-ministry-of-education-and-training-en.csl #https://www.zotero.org/styles
+filters:
+  - custom-numbered-blocks
+custom-numbered-blocks:
+  groups:
+    thmlike:
+      colors: [948bde, 584eab]
+      boxstyle: foldbox.simple
+      collapse: false
+      listin: [mathstuff]
+    explike:
+      colors: [948bde, 584eab]
+      boxstyle: foldbox.simple
+      collapse: false
+      listin: [mathstuff]
+    todos: default  
+  classes:
+    Theorem:
+      group: thmlike
+    Corollary:
+      group: thmlike
+    Conjecture:
+      group: thmlike
+      collapse: true  
+    Definition:
+      group: thmlike
+      colors: [d999d3, a01793]
+    EXAMPLE:
+      label: "Ví dụ"
+      group: explike
+      listin: [stilltodo]
+    EXAMPLECONT:
+      label: "(bổ sung)"
+      group: explike
+      #listin: [stilltodo]
+    TODO:
+      label: "To do"
+      colors: [e7b1b4, 8c3236]
+      group: todos
+      listin: [stilltodo]
+    DONE:
+      label: "Done"
+      colors: [cce7b1, 86b754]  
+      group: todos
+crossref: 
+  chapters: true
+ #ref-hyperlink: false # (default is true)
+  fig-title: "**Hình**"
+  fig-prefix: "*Hình*"
+  title-delim: "."
+  tbl-title: "**Bảng**"
+  tbl-prefix: "*Bảng*"
+  #thm-labels: arabic
+  #thm-title: Định lí
+  #thm-prefix: Định lí
+  #fig-prefix: Hình   
+format: 
+  #pptx:
+  #  incremental: true   
+  beamer:
+  #  aspectratio: 32
+    titlegraphic: imageThi/sonic_hedgehog_PNG38.png
+    #background-image: imageThi/logoconco_background_slide.jpg
+    navigation: frame
+    theme: Antibes
+    #output-file: thi_baocao_slide_chap5_IN_day
+    toc: true
+    toc-depth: 2
+    toc-title: Mục lục
+    fig-height: 2.5
+    fig-width: 4.5
+    echo: false
+    number-sections: true
+    number-depth: 2
+    #incremental: true   
+    mathfont: Euler-Math.otf
+    mathfontoptions:
+    - Path = fonts/fontvietnam/Euler-Math/    
+    header-includes: 
+      - \include{Thi_header_beamer.tex}
+    #section-titles: true
+  pdf:
+    documentclass: article
+    classoption: 
+      - twoside
+      - 10pt
+    paper-size: a4
+   # latex-output-dir: Thi_article
+    #output-file: thi_baocao_article_chap5_IN_day
+    header-includes: 
+      - \include{header_check.tex}
+      - \include{Thi_header.tex}
+      - \include{thibaigiangpre.tex}
+      - \setcounter{page}{1} 
+      - \setcounter{section}{0}
+    geometry:
+      - bindingoffset=1cm
+      - lmargin=2.5cm
+      - rmargin=2.5cm
+      - top =3cm
+      - bottom=2.5cm
+    subtitle: bộ môn Toán
+    toc: true
+    toc-depth: 2
+    toc-title: Mục lục
+    pagestyle: headings
+    number-depth: 3
+    number-sections: true
+    colorlinks: true
+    echo: true
+    hyperrefoptions:
+      - linktoc=all
+      - pdfwindowui
+      - linkbordercolor=red
+    #  - pdfpagemode=FullScreen
+    #include-before-body:
+    mainfont: CharisSILR.ttf
+    mainfontoptions:
+    - Path = fonts/fontvietnam/Charis-SIL/
+    - BoldFont = CharisSILB.ttf
+    - ItalicFont = CharisSILI.ttf
+    - BoldItalicFont = CharisSILBI.ttf
+    #sansfont: Tahoma
+    #monofont: Jura-Light.otf # font của code `nội dung`
+    #monofontoptions:
+    # - Path = fonts/fontvietnam/jura1/
+    mathfont: Euler-Math.otf
+    mathfontoptions:
+    - Path = fonts/fontvietnam/Euler-Math/ 
+  #html:
+  #  toc: true
+  #  toc-depth: 2
+  #  toc-title: "Bảng mục lục"
+  #  colorlinks: true
+  #  html-math-method: mathjax
+  revealjs:
+    #tableofcontents:
+    #  revealjs-plugins:
+    #    - tableofcontents
+    title-slide-attributes:
+      data-background-image: imageThi/sonic_hedgehog_PNG38.png
+      data-background-size: contain
+      data-background-opacity: number
+    pdf-separate-fragments: false
+    output-file: thi_baocao_article_chap5_IN_day
+    number-sections: true
+    number-depth: 2
+    #reference-location: document
+    margin: 0.01
+    width: 1350
+    css: ThiCSS/myStyleFontRevealjs.css
+    toc: true
+    toc-depth: 1
+    toc-title: Mục lục
+    loop: true
+    echo: true
+    show-notes: true
+    section-title-footnotes: "Các chú thích"
+    #number-offset: [5]
+    html-math-method: 
+      method: mathjax
+      url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_CHTML"
+    include-in-header:
+      - header.html
+    theme: sky
+    multiplex: true
+    incremental: false  
+    scrollable: true
+    slide-number: h.v
+    slide-tone: true # âm thanh báo chuyển slide
+    show-slide-number: all
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-back-arrows: visible
+    controls-tutorial: true
+    logo: https://pngimg.com/uploads/sonic_hedgehog/sonic_hedgehog_PNG38.png
+    #parallax-background-image: imageThi/backgroundthi.png
+    transition: concave
+    transition-speed: fast
+    background-transition: concave
+    chalkboard: 
+      theme: whiteboard
+    footer: (bộ môn **Toán**, Khoa **MT & KHTN**) 

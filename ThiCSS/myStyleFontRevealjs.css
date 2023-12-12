@@ -1,0 +1,113 @@
+
+.reveal h1
+{  font-family: "Oswald", sans-serif;
+  color: blue;
+  text-transform: none;
+  text-align: left;
+}
+
+.reveal h2,
+.reveal h3,
+.reveal h4
+{ font-family: "Oswald", sans-serif;
+  text-transform: none;
+  text-align: left;
+}
+
+
+.reveal .slide-logo {
+  display: block;
+  position: fixed; 
+  bottom: 32px;
+  right: 41px;
+  max-height: 2.2rem;
+  height: 100%;
+  width: auto;
+}
+
+
+
+/*
+.reveal .slide-number {
+  bottom: 12px;
+  left: 125px;
+  font-size: 16px;
+  background-color: transparent;
+}
+*/
+.reveal .has-logo .slide-number {
+  bottom: 12px;
+  left: 125px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.reveal .slide-number .slide-number-delimiter {
+  margin: 10;
+}
+
+ .reveal .title {
+  font-size: 75px !important;
+  color: red;
+  text-align: center !important;
+  /*color: red !important;*/
+}
+
+@font-face {
+  font-family: ES03;
+  src: url('../fonts/font_casio/ES03.ttf');
+}
+
+
+p, li {
+    font-family: Tahoma, Arial, Sans-Serif;
+}
+
+
+span.fontcasio {
+  font-family: ES03;
+  color: red;
+}
+
+.math {
+    font-family: 'Mathjax TeX';
+    color: #65000b;
+
+}
+div.fontcasio {
+  font-family: ES03;
+  color: red;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 .header-section-number:before {
+  content: "Chương ";
+}
+h1 .header-section-number:after {
+  content: ".\00a0";
+}
+
+
+h4 .header-section-number:before {
+  content: "chú ý";
+}
+h4 .header-section-number:after {
+  content: "";
+}
+
+.reveal li .header-section-number:after {
+  content: ".";
+}
+
+.reveal li .header-section-number:before {
+  content: "Chương\00a0";
+}
+
+#toc-title {
+  color: blue;
+}
