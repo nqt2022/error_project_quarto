@@ -1,0 +1,8 @@
+[2,"\n"]
+[1,"\nExecuting 'thucode.ipynb'\n  Cell 1/1: ''...Done\n"]
+[1,"\n"]
+[1,"pandoc \n  to: latex\n  output-file: thucode.tex\n  standalone: true\n  pdf-engine: xelatex\n  variables:\n    graphics: true\n    tables: true\n  default-image-extension: pdf\n  \nmetadata\n  block-headings: true\n  title: The error of project Quarto\n  documentclass: article\n  classoption:\n    - twoside\n    - 10pt\n  \n"]
+[1,"\nRendering PDF\nrunning xelatex - 1\n"]
+[1,"  This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex.fmt)\n   restricted \\write18 enabled.\n  entering extended mode\n  \nrunning xelatex - 2\n"]
+[1,"  This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex.fmt)\n   restricted \\write18 enabled.\n  entering extended mode\n  \n\nOutput created: thucode.pdf\n\nWatching files for changes\nBrowse at http://localhost:5664/web/viewer.html\n"]
+[1,"  /web/viewer.htmlthucode.pdf (404: Not Found)\n"]
